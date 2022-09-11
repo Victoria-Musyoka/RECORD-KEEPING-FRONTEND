@@ -1,9 +1,11 @@
 import React from 'react'
 
+const URL='https://record-vic-mine.herokuapp.com'
+
 const Stocklist = ({stock,id,onDeleteStock}) => {
     
     const handleclick =()=>{
-        fetch(`http://localhost:9292/stocksdelete/${id}`,{
+        fetch(`${URL}/stocksdelete/${id}`,{
           method: "DELETE",
           headers: {
             "content-Type": "application/json",

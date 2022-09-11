@@ -1,5 +1,7 @@
 import React ,{useState} from "react";
 
+const URL = 'https://record-vic-mine.herokuapp.com'
+
 
 function NewStocksForm({onAddStock}) {
  const [submitData, setSubmitData]= useState({
@@ -30,7 +32,7 @@ function NewStocksForm({onAddStock}) {
     description: submitData.description
    }
 
-     fetch("http://localhost:9292/stockspost",{
+     fetch(`${URL}/stockspost`,{
       method: "POST",
       headers:{
         "content-Type": "application/json"

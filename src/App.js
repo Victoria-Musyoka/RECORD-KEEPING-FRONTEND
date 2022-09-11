@@ -6,14 +6,14 @@ import Navbar from './components/Navbar';
 import { Routes,Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-const URL = "http://localhost:9292/stocks"
+const URL='https://record-vic-mine.herokuapp.com'
 
 
 function App() {
   const [stocks,setStocks]= useState([]);
   
  useEffect(()=>{
-  fetch(URL)
+  fetch(`${URL}/stocks`)
   .then(resp=>resp.json())
   .then(data=>setStocks(data));
 
