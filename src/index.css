@@ -1,0 +1,53 @@
+.stockcontainer{
+ 
+    display: flex;
+    justify-content: space-around;
+    background-color:grey;
+  }
+  
+  .homecontainer{
+   
+    justify-content: space-around;
+    background-color:grey; 
+  }
+  
+  .loginname{
+   
+    justify-content: space-around;
+    background-color:grey; 
+    background-image: -moz-linear-gradient();
+    
+  }
+  /* 
+  .stocklist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  } */
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    word-wrap: break-word;
+  
+  
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1em;
+    word-wrap: break-word;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    word-wrap: break-word;
+  
+  }
+  th, td {
+    border-color: #96D4D4;
+  }
